@@ -4,7 +4,7 @@ import { Message } from '@/types';
 // ⚠️ Security Note: Never expose API keys in frontend code!
 // Move this to a backend service instead
 const GEMINI_API_KEY = 'AIzaSyAVWfoIj-h1B2vgARNn0l7ikOgJ6OfVhCM';
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
+const GEMINI_API_URL = 'https://generativelanguage.googleapis.com';
 
 export const buildPersonalityPrompt = (messages: Message[], userName: string = 'User', userProfile?: any) => {
   const last5Messages = messages.slice(-5)
